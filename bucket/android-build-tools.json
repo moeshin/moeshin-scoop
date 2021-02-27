@@ -1,0 +1,31 @@
+{
+  "version": "31.0.0-rc1",
+  "description": "Android SDK Build-Tools is a component of the Android SDK required for building Android apps",
+  "homepage": "https://developer.android.com/studio/releases/build-tools",
+  "license": "Apache-2.0",
+  "url": "https://dl.google.com/android/repository/06319b1a74f3821c6f6150b611cffbc53c90720b.build-tools_r31-rc1-windows.zip",
+  "hash": "sha1:eaacc4fa426bb66adbfe67ffaaf02533bc8eb9c8",
+  "installer": {
+    "script": "Move-Item \"$dir\\android-*\\\" \"$dir\\build-tools\""
+  },
+  "bin": [
+    "build-tools\\aapt.exe",
+    "build-tools\\aapt2.exe",
+    "build-tools\\aarch64-linux-android-ld.exe",
+    "build-tools\\aidl.exe",
+    "build-tools\\apksigner.bat",
+    "build-tools\\arm-linux-androideabi-ld.exe",
+    "build-tools\\bcc_compat.exe",
+    "build-tools\\d8.bat",
+    "build-tools\\dexdump.exe",
+    "build-tools\\dx.bat",
+    "build-tools\\i686-linux-android-ld.exe",
+    "build-tools\\lld.exe",
+    "build-tools\\llvm-rs-cc.exe",
+    "build-tools\\mainDexClasses.bat",
+    "build-tools\\mipsel-linux-android-ld.exe",
+    "build-tools\\split-select.exe",
+    "build-tools\\x86_64-linux-android-ld.exe",
+    "build-tools\\zipalign.exe"
+  ]
+}
