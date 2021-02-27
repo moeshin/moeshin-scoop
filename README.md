@@ -3,5 +3,5 @@
 ### Usage
 
 ```cmd
-scoop bucket add moeshin https://github.com/moeshin/moeshin-scoop
+scoop bucket add moeshin https://github.com/moeshin/scoop-moeshin
 ```
