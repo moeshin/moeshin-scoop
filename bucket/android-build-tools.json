@@ -4,7 +4,7 @@
   "homepage": "https://developer.android.com/studio/releases/build-tools",
   "license": "Apache-2.0",
   "url": "https://dl.google.com/android/repository/06319b1a74f3821c6f6150b611cffbc53c90720b.build-tools_r31-rc1-windows.zip",
-  "hash": "sha1:eaacc4fa426bb66adbfe67ffaaf02533bc8eb9c8",
+  "hash": "f5b3491481b18fbe8e039ec7462ae7370e93f156a37e80479080fc88bad55728",
   "installer": {
     "script": "Move-Item \"$dir\\android-*\\\" \"$dir\\build-tools\""
   },
@@ -27,5 +27,12 @@
     "build-tools\\split-select.exe",
     "build-tools\\x86_64-linux-android-ld.exe",
     "build-tools\\zipalign.exe"
-  ]
+  ],
+  "checkver": {
+    "url": "https://dl.google.com/android/repository/repository2-1.xml",
+    "re": "path=\"build-tools;(.*?)\"[\\s\\S]*?<url>(.*?-windows\\.zip)<\\/url>"
+  },
+  "autoupdate": {
+    "url": "https://dl.google.com/android/repository/$match2"
+  }
 }
