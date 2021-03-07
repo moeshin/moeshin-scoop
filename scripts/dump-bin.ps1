@@ -12,5 +12,5 @@ Get-ChildItem -File | ForEach-Object {
         '.ps1' {}
         Default { return }
     }
-    Write-Host "    ""$prefix$($_.Name)"","
+    Write-Host "$(' ' * 8)""$prefix$($_.Name)"","
 }
