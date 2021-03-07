@@ -8,7 +8,7 @@ param(
 . "$psscriptroot\required-admin.ps1" uninstall
 if (!$?) { exit 1 }
 
-. "$psscriptroot\function.ps1"
+. "$psscriptroot\functions.ps1"
 
 if ($null -ne $dir) {
     $_pwd = $PWD
