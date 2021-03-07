@@ -1,0 +1,63 @@
+{
+    "version": "4.0.0",
+    "description": "Small Device C Compiler",
+    "homepage": "https://sourceforge.net/projects/sdcc/",
+    "license": ["GPL-2.0-only", "GPL-3.0-only", "Zlib", "Public Domain"],
+    "architecture": {
+        "64bit": {
+            "url": "https://downloads.sourceforge.net/project/sdcc/sdcc-win64/4.0.0/sdcc-4.0.0-x64-setup.exe#/dl.7z",
+            "hash": "sha1:0d3a32d0db59d1426c16fb9036b05d2c5657b594"
+        },
+        "32bit": {
+            "url": "https://downloads.sourceforge.net/project/sdcc/sdcc-win32/4.0.0/sdcc-4.0.0-setup.exe#/dl.7z",
+            "hash": "sha1:7bcbb5fe178419dddca566630282a976c65761ae"
+        }
+    },
+    "bin": [
+      "bin\\as2gbmap.cmd",
+      "bin\\makebin.exe",
+      "bin\\packihx.exe",
+      "bin\\s51.exe",
+      "bin\\sdar.exe",
+      "bin\\sdas390.exe",
+      "bin\\sdas6808.exe",
+      "bin\\sdas8051.exe",
+      "bin\\sdasgb.exe",
+      "bin\\sdaspdk13.exe",
+      "bin\\sdaspdk14.exe",
+      "bin\\sdaspdk15.exe",
+      "bin\\sdasrab.exe",
+      "bin\\sdasstm8.exe",
+      "bin\\sdastlcs90.exe",
+      "bin\\sdasz80.exe",
+      "bin\\sdcc.exe",
+      "bin\\sdcdb.exe",
+      "bin\\sdcpp.exe",
+      "bin\\sdld.exe",
+      "bin\\sdld6808.exe",
+      "bin\\sdldgb.exe",
+      "bin\\sdldpdk.exe",
+      "bin\\sdldstm8.exe",
+      "bin\\sdldz80.exe",
+      "bin\\sdnm.exe",
+      "bin\\sdobjcopy.exe",
+      "bin\\sdranlib.exe",
+      "bin\\shc08.exe",
+      "bin\\sstm8.exe",
+      "bin\\sz80.exe"
+    ],
+    "checkver": {
+        "url": "https://sourceforge.net/p/sdcc/news/",
+        "re": "Small Device C Compiler ([-.\\dA-Z]+) released"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://downloads.sourceforge.net/project/sdcc/sdcc-win64/$matchHead/sdcc-$version-x64-setup.exe#/dl.7z"
+            },
+            "32bit": {
+                "url": "https://downloads.sourceforge.net/project/sdcc/sdcc-win32/$matchHead/sdcc-$version-setup.exe#/dl.7z"
+            }
+        }
+    }
+}
