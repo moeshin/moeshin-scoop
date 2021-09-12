@@ -5,9 +5,9 @@
   "license": "Freeware",
   "url": "http://www.stcmcudata.com/STCISP/stc-isp-15xx-v6.88.zip",
   "hash": "aba80db9680b193b8208ebb0abbe4ff0fd6179b358f0331e1c7e7552e187192d",
-  "checkver": "<a href\\s*=\\s\"(?<url>.*?)\"\\s*(?:TARGET=\".*?\"\\s*)?>\\s*STC-ISP软件V(?<version>[\\d.]+)\\s*版<\\/a>",
+  "checkver": "<a href\\s*=\\s\"https?://(?<url>.*?)\"\\s*(?:TARGET=\".*?\"\\s*)?>\\s*STC-ISP[^ -~\\t\\n]+V(?<version>[A-Z\\d.]+)\\s*[^ -~\\t\\n]+<\\/a>",
   "autoupdate": {
-      "url": "$matchUrl"
+      "url": "https://$matchUrl"
   },
   "shortcuts": [
     [
