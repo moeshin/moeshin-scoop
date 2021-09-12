@@ -1,26 +1,26 @@
 {
-  "version": "6.88",
-  "description": "A single-chip download programming software, designed for STC series single-chips",
-  "homepage": "https://www.stcmcudata.com/",
-  "license": "Freeware",
-  "url": "http://www.stcmcudata.com/STCISP/stc-isp-15xx-v6.88.zip",
-  "hash": "aba80db9680b193b8208ebb0abbe4ff0fd6179b358f0331e1c7e7552e187192d",
-  "checkver": "<a href\\s*=\\s\"https?://(?<url>.*?)\"\\s*(?:TARGET=\".*?\"\\s*)?>\\s*STC-ISP[^ -~\\t\\n]+V(?<version>[A-Z\\d.]+)\\s*[^ -~\\t\\n]+<\\/a>",
-  "autoupdate": {
-      "url": "https://$matchUrl"
-  },
-  "shortcuts": [
-    [
-      "stc-isp.exe",
-      "STC-ISP"
-    ]
-  ],
-  "desktopShortcuts": true,
-  "installer": {
-    "script": "Move-Item \"$dir\\stc-isp-*.exe\" \"$dir\\stc-isp.exe\""
-  },
-  "post_install":  ". \"$bucketsdir\\$bucket\\scripts\\desktop-shortcuts-install.ps1\"",
-  "uninstaller": {
-    "script": ". \"$bucketsdir\\$($install.bucket)\\scripts\\desktop-shortcuts-uninstall.ps1\""
-  }
+    "version": "6.88I",
+    "description": "A single-chip download programming software, designed for STC series single-chips",
+    "homepage": "https://www.stcmcudata.com/",
+    "license": "Freeware",
+    "url": "https://www.stcmcudata.com/STCISP/stc-isp-15xx-v6.88I.zip",
+    "hash": "6cf663fc5a0f6759f2c93c5b18794b58313d9f9beea47014153c9ab03f7e3bbe",
+    "checkver": "<a href\\s*=\\s\"https?://(?<url>.*?)\"\\s*(?:TARGET=\".*?\"\\s*)?>\\s*STC-ISP[^ -~\\t\\n]+V(?<version>[A-Z\\d.]+)\\s*[^ -~\\t\\n]+<\\/a>",
+    "autoupdate": {
+        "url": "https://$matchUrl"
+    },
+    "shortcuts": [
+        [
+            "stc-isp.exe",
+            "STC-ISP"
+        ]
+    ],
+    "desktopShortcuts": true,
+    "installer": {
+        "script": "Move-Item \"$dir\\stc-isp-*.exe\" \"$dir\\stc-isp.exe\""
+    },
+    "post_install": ". \"$bucketsdir\\$bucket\\scripts\\desktop-shortcuts-install.ps1\"",
+    "uninstaller": {
+        "script": ". \"$bucketsdir\\$($install.bucket)\\scripts\\desktop-shortcuts-uninstall.ps1\""
+    }
 }
