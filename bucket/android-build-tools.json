@@ -1,10 +1,10 @@
 {
-    "version": "31.0.0",
+    "version": "32.0.0-rc1",
     "description": "Android SDK Build-Tools is a component of the Android SDK required for building Android apps",
     "homepage": "https://developer.android.com/studio/releases/build-tools",
     "license": "Apache-2.0",
-    "url": "https://dl.google.com/android/repository/09489e417c0a266f2862ddd82b4ac29a1b7af55e.build-tools_r31-windows.zip",
-    "hash": "bff1286dd77fff51981df15ac4349a618430dc5064870886b7108870433549f1",
+    "url": "https://dl.google.com/android/repository/d01cc96855aa1c07b34993129f6fad1bc44db1ff.build-tools_r32-rc1-windows.zip",
+    "hash": "5615f8aadc5185ea0791d6e20686eb1e0a1fbd7a02870d57c38820abfb0e52aa",
     "installer": {
         "script": "Move-Item \"$dir\\android-*\\\" \"$dir\\build-tools\""
     },
