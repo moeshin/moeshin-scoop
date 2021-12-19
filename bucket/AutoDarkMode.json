@@ -1,33 +1,33 @@
 {
-  "version": "10.0.0.26",
-  "description": "Automatically switches between the dark and light theme of Windows 10 at scheduled times.",
-  "homepage": "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode",
-  "license": {
-    "identifier": "GPL-3.0-only"
-  },
-  "url": "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/releases/download/10.0.0.26/AutoDarkModeX_10.0.0.26.exe",
-  "hash": "ed95bbd34de1340dc50a33a6182f0586191adce59f18d741558379fb70417367",
-  "notes": "Settings need to be reapplied after updating.",
-  "installer": {
-    "script": [
-      "if ([Environment]::OSVersion.Version.Major -ne 10) {",
-      "   error \"$app only supports Windows 10 or after.\"",
-      "   exit 1",
-      "}",
-      "Invoke-ExternalCommand -FilePath \"$dir\\$fname\" -ArgumentList @('/SP-', '/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', \"/DIR=$dir\") -RunAs | Out-Null",
-      "Remove-Item \"$dir\\$fname\""
-    ]
-  },
-  "uninstaller": {
-    "file": "unins000.exe",
-    "args": [
-      "/VERYSILENT",
-      "/SUPPRESSMSGBOXES",
-      "/NORESTART"
-    ]
-  },
-  "checkver": "github",
-  "autoupdate": {
-    "url": "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/releases/download/$version/AutoDarkModeX_$version.exe"
-  }
+    "version": "10.1.0.10",
+    "description": "Automatically switches between the dark and light theme of Windows 10 at scheduled times.",
+    "homepage": "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode",
+    "license": {
+        "identifier": "GPL-3.0-only"
+    },
+    "url": "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/releases/download/10.1.0.10/AutoDarkModeX_10.1.0.10.exe",
+    "hash": "bb45e187b4842bfc5d25f838d6267c04cad6fbbfbd70f61113598fc243d1db49",
+    "notes": "Settings need to be reapplied after updating.",
+    "installer": {
+        "script": [
+            "if ([Environment]::OSVersion.Version.Major -ne 10) {",
+            "   error \"$app only supports Windows 10 or after.\"",
+            "   exit 1",
+            "}",
+            "Invoke-ExternalCommand -FilePath \"$dir\\$fname\" -ArgumentList @('/SP-', '/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', \"/DIR=$dir\") -RunAs | Out-Null",
+            "Remove-Item \"$dir\\$fname\""
+        ]
+    },
+    "uninstaller": {
+        "file": "unins000.exe",
+        "args": [
+            "/VERYSILENT",
+            "/SUPPRESSMSGBOXES",
+            "/NORESTART"
+        ]
+    },
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/releases/download/$version/AutoDarkModeX_$version.exe"
+    }
 }
