@@ -28,6 +28,6 @@
   },
   "checkver": "github",
   "autoupdate": {
-    "url": "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/releases/download/$version/AutoDarkMode_v$underscoreVersion_Setup.exe"
+    "url": "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/releases/download/$version/AutoDarkModeX_$version.exe"
   }
 }
