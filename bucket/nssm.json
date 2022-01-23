@@ -1,0 +1,34 @@
+{
+    "version": "2.24-107-gedd8ac4",
+    "description": "The Non-Sucking Service Manager.",
+    "homepage": "https://nssm.cc/",
+    "license": "Public Domain",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/moeshin/nssm/releases/download/2.24-107-gedd8ac4/nssm-win64.exe",
+            "hash": "b951dba21ee330ff0952e944973d0a85d5e17b23c6e089744f044f81be0516a8"
+        },
+        "32bit": {
+            "url": "https://github.com/moeshin/nssm/releases/download/2.24-107-gedd8ac4/nssm-win32.exe",
+            "hash": "8e7ae2a64ecde53fa406a59b260b779136ab002c4f86410cb1b481ab9baad8ec"
+        }
+    },
+    "bin": "nssm.exe",
+    "installer": {
+        "script": "Move-Item \"$dir\\nssm-win??.exe\" \"$dir\\nssm.exe\""
+    },
+    "checkver": {
+        "url": "https://api.github.com/repos/moeshin/nssm/releases/latest",
+        "jsonpath": "$.tag_name"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/moeshin/nssm/releases/download/$version/nssm-win64.exe"
+            },
+            "32bit": {
+                "url": "https://github.com/moeshin/nssm/releases/download/$version/nssm-win32.exe"
+            }
+        }
+    }
+}
