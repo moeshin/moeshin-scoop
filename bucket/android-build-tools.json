@@ -30,7 +30,7 @@
     ],
     "checkver": {
         "url": "https://dl.google.com/android/repository/repository2-1.xml",
-        "re": "path=\"build-tools;(.*?)\"[\\s\\S]*?<url>(.*?-windows\\.zip)<\\/url>"
+        "regex": "path=\"build-tools;(.*?)\"[\\s\\S]*?<url>(.*?-windows\\.zip)<\\/url>"
     },
     "autoupdate": {
         "url": "https://dl.google.com/android/repository/$match2"

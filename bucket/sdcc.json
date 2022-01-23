@@ -53,7 +53,7 @@
     ],
     "checkver": {
         "url": "https://sourceforge.net/p/sdcc/news/",
-        "re": "Small Device C Compiler (?:version )?([-.\\dA-Z]+) released"
+        "regex": "Small Device C Compiler (?:version )?([-.\\dA-Z]+) released"
     },
     "autoupdate": {
         "architecture": {
