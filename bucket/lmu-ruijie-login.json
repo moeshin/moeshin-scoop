@@ -1,0 +1,46 @@
+{
+    "version": "1.0.0",
+    "description": "黎明职业大学-锐捷校园网网线自动登录",
+    "homepage": "https://github.com/moeshin/lmu-ruijie-login",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/moeshin/lmu-ruijie-login/releases/download/v1.0.0/lmu-ruijie-login-windows-amd64.tar.gz",
+            "hash": "b1b2e6d25048429ecf15de89733914cfb5783f4d1cc230065037f1a262c3c0db",
+            "extract_dir": "lmu-ruijie-login-windows-amd64"
+        },
+        "32bit": {
+            "url": "https://github.com/moeshin/lmu-ruijie-login/releases/download/v1.0.0/lmu-ruijie-login-windows-386.tar.gz",
+            "hash": "a566aceebc7d33f15d3a72048ef1c0d4163fcac59b3f6bca8bce9850efc06b03",
+            "extract_dir": "lmu-ruijie-login-windows-386"
+        }
+    },
+    "pre_install": "if (!(Test-Path (Join-Path $persist_dir 'log.txt'))) {New-Item (Join-Path $dir 'log.txt') >$null}",
+    "persist": [
+        "config.ini",
+        "log.txt"
+    ],
+    "bin": "lmu-ruijie-login.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/moeshin/lmu-ruijie-login/releases/download/v$version/lmu-ruijie-login-windows-amd64.tar.gz"
+            },
+            "32bit": {
+                "url": "https://github.com/moeshin/lmu-ruijie-login/releases/download/v$version/lmu-ruijie-login-windows-386.tar.gz"
+            }
+        }
+    },
+    "suggest": {
+        "NSSM": "moeshin/nssm"
+    },
+    "notes": [
+        "配置文件：\"$persist_dir\\config.ini\"",
+        "",
+        "可作为服务开机运行",
+        "安装服务：\"$dir\\service-install.cmd\"",
+        "卸载服务：\"$dir\\service-uninstall.cmd\"",
+        "（需要 NSSM 支持）"
+    ]
+}
