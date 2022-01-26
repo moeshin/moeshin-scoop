@@ -1,17 +1,17 @@
 {
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "黎明职业大学-锐捷校园网网线自动登录",
     "homepage": "https://github.com/moeshin/lmu-ruijie-login",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/moeshin/lmu-ruijie-login/releases/download/v1.0.0/lmu-ruijie-login-windows-amd64.tar.gz",
-            "hash": "b1b2e6d25048429ecf15de89733914cfb5783f4d1cc230065037f1a262c3c0db",
+            "url": "https://github.com/moeshin/lmu-ruijie-login/releases/download/v1.0.2/lmu-ruijie-login-windows-amd64.tar.gz",
+            "hash": "bedc97fdf3eba1923828d78e6e1994a23063a214d2ceee689f40e2a54b2f2ce0",
             "extract_dir": "lmu-ruijie-login-windows-amd64"
         },
         "32bit": {
-            "url": "https://github.com/moeshin/lmu-ruijie-login/releases/download/v1.0.0/lmu-ruijie-login-windows-386.tar.gz",
-            "hash": "a566aceebc7d33f15d3a72048ef1c0d4163fcac59b3f6bca8bce9850efc06b03",
+            "url": "https://github.com/moeshin/lmu-ruijie-login/releases/download/v1.0.2/lmu-ruijie-login-windows-386.tar.gz",
+            "hash": "a39c3ac2797c4c4421bb6b792d6e852d60faa3beeb4998ff490ce494569a0513",
             "extract_dir": "lmu-ruijie-login-windows-386"
         }
     },
