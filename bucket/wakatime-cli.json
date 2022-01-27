@@ -1,19 +1,19 @@
 {
-    "version": "1.35.0",
+    "version": "1.35.1",
     "description": "Command line interface used by all WakaTime text editor plugins.",
     "homepage": "https://wakatime.com/",
     "license": "BSD-3-Clause",
     "architecture": {
         "32bit": {
-            "url": "https://github.com/wakatime/wakatime-cli/releases/download/v1.35.0/wakatime-cli-windows-386.zip",
-            "hash": "10d31ec61466a68bc96de3b958ae41c5c573790b001ba4639a20d1292505dc57",
+            "url": "https://github.com/wakatime/wakatime-cli/releases/download/v1.35.1/wakatime-cli-windows-386.zip",
+            "hash": "71600b8ed5d653021dd76470ba6db3bbfa3e634891ee2de06cb2acc5640e8c05",
             "installer": {
                 "script": "Move-Item \"$dir\\wakatime-cli-windows-386.exe\" \"$dir\\wakatime-cli.exe\""
             }
         },
         "64bit": {
-            "url": "https://github.com/wakatime/wakatime-cli/releases/download/v1.35.0/wakatime-cli-windows-amd64.zip",
-            "hash": "f7ee1937443b9d7f06b82657fd577bcf89397d979c570dc5abfe3244aa96ff9e",
+            "url": "https://github.com/wakatime/wakatime-cli/releases/download/v1.35.1/wakatime-cli-windows-amd64.zip",
+            "hash": "71b380fd1d97c96f81d132ee5bfc18efb817fa9725bb14906b4fbecd752ba63f",
             "pre_install": "Move-Item \"$dir\\wakatime-cli-windows-amd64.exe\" \"$dir\\wakatime-cli.exe\""
         }
     },
