@@ -1,10 +1,10 @@
 {
-    "version": "6.92G",
+    "version": "6.92H",
     "description": "A single-chip download programming software, designed for STC series single-chips",
     "homepage": "https://www.stcmcudata.com/",
     "license": "Freeware",
-    "url": "https://www.stcmcudata.com/STCISP/stc-isp-15xx-v6.92G.zip",
-    "hash": "e4dfef9fe5ea93c9821510c4d99c303ccf0702a792bbb5e91ab700f4a71057a4",
+    "url": "https://www.stcmcudata.com/STCISP/stc-isp-15xx-v6.92H.zip",
+    "hash": "ccc06f649bb97bf7c7691ec41706ea96561b54d4a4ad0e6cc5c4057bdfbcbbbe",
     "checkver": "<a href\\s*=\\s\"https?://(?<url>.*?)\"\\s*(?:TARGET=\".*?\"\\s*)?>\\s*STC-ISP[^ -~\\t\\n]+V(?<version>[A-Z\\d.]+)\\s*[^ -~\\t\\n]+<\\/a>",
     "autoupdate": {
         "url": "https://$matchUrl"
