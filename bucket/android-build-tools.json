@@ -1,5 +1,5 @@
 {
-    "version": "35.0.0-rc2",
+    "version": "35.0.0-rc3",
     "description": "Android SDK Build-Tools is a component of the Android SDK required for building Android apps",
     "homepage": "https://developer.android.com/studio/releases/build-tools",
     "license": "Apache-2.0",
